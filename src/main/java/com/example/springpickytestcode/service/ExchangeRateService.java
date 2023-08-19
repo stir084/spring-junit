@@ -21,22 +21,10 @@ public class ExchangeRateService {
                 .retrieve()
                 .bodyToMono(Map.class)
                 .block();
-
-
-        System.out.println(a +"---");
-/*
-        return webClient.get()
-                .retrieve()
-                .bodyToMono(ExchangeRateResponse.class)
-                .b
-                .map(response -> response.getRates().get("USD"));*/
     }
 
     public String connect() {
-        //ApiConnect.connect();
         System.out.println(apiConnect.connect());
-       /* ApiConnect apiConnect = new ApiConnect();
-        apiConnect.connect();*/
         System.out.println("하하");
         return "";
     }
