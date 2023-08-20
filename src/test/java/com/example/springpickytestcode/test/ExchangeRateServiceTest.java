@@ -47,10 +47,6 @@ public class ExchangeRateServiceTest {
                 .retrieve()
                 .bodyToMono(Map.class)
                 .block();
-              /*  .flatMapIterable(waterResponses -> Arrays.asList(waterResponses))
-                .filter(response -> response.getValue() != null)
-                .map(WaterResponse::getValue)
-                .next();*/
     }
 
 
@@ -62,9 +58,8 @@ public class ExchangeRateServiceTest {
                 .retrieve()
                 .bodyToMono(Map.class)
                 .block();*/
-       // Mockito.when() // bean이 아닌 놈에 대한 stub은 어떻게 하지?
+       // Mockito.when()
 
         Mockito.when(apiConnect.connect()).thenReturn(true);
-        System.out.println(exchangeRateService.connect() +"짠");
     }
 }
