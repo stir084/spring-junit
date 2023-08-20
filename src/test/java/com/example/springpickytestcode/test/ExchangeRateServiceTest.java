@@ -36,7 +36,7 @@ public class ExchangeRateServiceTest {
                 .retrieve()
                 .bodyToMono(Map.class)
                 .block();*/
-        System.out.println(getSafeDrinkingWaterRate() +"--");
+        System.out.println(getSafeDrinkingWaterRate() +"-");
     }
     private static final String WORLD_BANK_WATER_API_BASE_URL = "https://api.worldbank.org/v2/countries/all/indicators/SH.H2O.SMDW.ZS?format=json";
 
