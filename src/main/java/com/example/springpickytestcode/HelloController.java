@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/hello")
     public ResponseEntity<?> hello(){
-        System.out.println("ㅋㅋ");
-        log.error("ㅋㅋㅋ로로");
         return ResponseEntity.ok("hello");
     }
 }

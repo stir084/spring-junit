@@ -17,7 +17,6 @@ public class MyInterceptor implements HandlerInterceptor {
             HttpServletResponse response,
             Object handler
     ) throws Exception {
-        System.out.println("ㅋㅇㅋㅇㅇ");
         return true;
     }
 
